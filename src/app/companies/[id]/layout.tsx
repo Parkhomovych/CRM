@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from '@/app/components/Header';
 
-export interface LayoutProps {
-  children: React.ReactNode;
+export interface PageProps {
+  params: { id: string };
 }
 
-export default function Layout({ children }: LayoutProps) {
-  return <div>{children}</div>;
+export default function Page({ params }: PageProps) {
+  return (
+    <>
+      <Header>Company ({params.id})</Header>
+    </>
+  );
 }
