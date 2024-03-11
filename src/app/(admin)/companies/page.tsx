@@ -22,7 +22,7 @@ export default function Page({}: PageProps) {
             id={1}
             category="Products"
             company="Costco"
-            status={Status.Pedind}
+            status={Status.Pending}
             promotion={true}
             country="USA"
             joinedDate="02.19.2023"

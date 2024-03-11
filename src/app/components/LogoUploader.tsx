@@ -2,11 +2,11 @@
 
 import React from 'react';
 import Image from 'next/image';
+
 export interface LogoUploaderProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label?: string;
 }
-
 
 export default function LogoUploader({
   label,
@@ -38,7 +38,6 @@ export default function LogoUploader({
           accept="image/*"
           className="hidden"
         />
-        
       </label>
     </div>
   );

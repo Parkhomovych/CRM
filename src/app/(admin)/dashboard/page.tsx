@@ -1,13 +1,11 @@
 import React from 'react';
 
-export interface pageProps {
-  children?: React.ReactNode;
-}
+export interface PageProps {}
 
-export default function page({ children }: pageProps) {
+export default function Page({}: PageProps) {
   return (
     <main>
-      <h1 className="text-xl">Dash Board Page</h1>
+      <h1 className="text-xl">Dashboard Page</h1>
     </main>
   );
 }

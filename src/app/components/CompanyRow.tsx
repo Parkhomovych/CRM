@@ -16,7 +16,7 @@ export interface CompanyRowProps {
 const labelByStatus = {
   [Status.Active]: 'Active',
   [Status.NotActive]: 'Not Active',
-  [Status.Pedind]: 'Pending',
+  [Status.Pending]: 'Pending',
   [Status.Suspended]: 'Suspended',
 };
 

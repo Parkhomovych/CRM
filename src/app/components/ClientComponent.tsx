@@ -1,17 +1,20 @@
 'use client';
 
 import React from 'react';
+import CompanyForm, { CompanyFormProps } from '@/app/components/CompanyForm';
+import Modal, { ModalProps } from '@/app/components/Modal';
 
-export interface ClientComponentProps {
-  children?: React.ReactNode;
+export interface CompanyFormModalProps extends ModalProps {
+  onSubmit: CompanyFormProps['onSubmit'];
 }
 
-export default function ClientComponent({ children }: ClientComponentProps) {
-  console.log('ClientComponent');
+export default function CompanyFormModal({
+  onSubmit,
+  ...rest
+}: CompanyFormModalProps) {
   return (
-    <div>
-      {children}
-      <span>ClientComponent</span>
-    </div>
+    <Modal {...rest}>
+      <CompanyForm onSubmit={onSubmit} />
+    </Modal>
   );
 }
